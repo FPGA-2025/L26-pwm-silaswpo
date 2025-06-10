@@ -32,7 +32,7 @@ module PWM_Control #(
 
             if (duty_cycle >= period * 70 / 100)
                 dir <= 0;
-            else if (duty_cycle <= period / 40000) // ~0.0025%
+            else if (duty_cycle <= period / 100) // ~0.0025%
                 dir <= 1;
         end
     end
