@@ -8,7 +8,7 @@ module PWM_Control #(
 
     wire pwm_out;
     reg [15:0] duty_cycle = 0;
-    reg [15:0] period = CLK_FREQ / 1250; // 1.25 kHz
+    reg [15:0] period = CLK_FREQ / 500; // 1.25 kHz
     reg dir = 1; // 1: aumentando, 0: diminuindo
 
     // Instancia o PWM
