@@ -37,6 +37,7 @@ module PWM_Control #(
         end
     end
 
+
     assign leds = {8{pwm_out}}; // todos LEDs refletem o PWM
 
 endmodule
